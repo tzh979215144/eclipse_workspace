@@ -1,7 +1,0 @@
-<classpath>
-  <container id="Bank_test!org.eclipse.jst.j2ee.internal.web.container">
-    <entry id="/home/tanpang/eclipse-workspace/Bank_test/WebContent/WEB-INF/lib/SORM0.8.jar">
-      <source-attachment-path>/home/tanpang/桌面/SORM0.8/src</source-attachment-path>
-    </entry>
-  </container>
-</classpath>
