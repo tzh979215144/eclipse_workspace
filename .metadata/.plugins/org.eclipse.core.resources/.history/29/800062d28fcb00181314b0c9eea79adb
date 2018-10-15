@@ -1,0 +1,14 @@
+package com.tanpang.day01;
+
+import java.util.Queue;
+
+public class DogCatQueue {
+
+	private Queue<PetEnterQueue> dogQ;
+	private Queue<PetEnterQueue> catQ;
+	
+	public DogCatQueue() {
+		dogQ=new Queue<PetEnterQueue>();
+		catQ=new Queue<PetEnterQueue>();
+	}
+}

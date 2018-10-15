@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persons>
+	<person>
+		<name>鑷冲皧瀹�</name>
+		<age>9000</age>
+	</person>
+	<person>
+		<name>鐧芥櫠鏅�</name>
+		<age>7000</age>
+	</person>
+</persons>

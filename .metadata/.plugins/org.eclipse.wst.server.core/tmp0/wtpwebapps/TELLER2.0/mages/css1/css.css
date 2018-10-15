@@ -1,0 +1,341 @@
+body {
+	FONT-SIZE: 12px;
+	margin-left: 4px;
+	margin-top: 0px;
+	margin-right: 0px;
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; SCROLLBAR-FACE-COLOR: #59D6FF; PADDING-BOTTOM: 0px; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #ffffff; SCROLLBAR-3DLIGHT-COLOR: #007BC6; SCROLLBAR-DARKSHADOW-COLOR: #007BC6; SCROLLBAR-ARROW-COLOR: #007BC6; PADDING-TOP: 0px; SCROLLBAR-TRACK-COLOR: #009ED2;
+}
+
+
+.table{
+	border: 1px solid #CAF2FF;/*边框颜色*/
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background:#B8D3F1;
+}
+.td_bg {
+	background:#ffffff;
+}
+
+/* .ACT_btn {
+	background-color:#EAEAEA;
+	border-top:2px solid #FEFEFE;
+border-right:1px solid #BCBCBCborder-bottom:1px solid #BCBCBC;	border-left:2px solid #FEFEFE;
+	height:29px;
+	cursor:hand;
+	font-size: 14px;
+}*/
+.ACT_btn {
+	background: url(../act_btn.gif) no-repeat;
+	height:26px;
+	width:94px;
+	cursor:hand;
+	border:solid 0px #111;
+	font-size: 12px;
+}
+
+.bg_tr {
+	font-family: "微软雅黑,Verdana, 新宋体";
+	color:#1E5494;/*标题字体色*/
+	font-size:12px;
+	font-weight:bolder;
+	background:#E4F1FA;/*标题背景色*/
+
+    line-height: 22px;
+}td {
+	color:#1E5494;
+	font-size:12px;
+    line-height: 18px;
+}
+.tdbg1 {
+	background:#F9F9F9;
+}
+.tdbg {
+	BACKGROUND: #ffffff;
+}
+.top_link{text-decoration:none;font-size:14px;color:#FFDED2;height:0;filter:dropshadow(offX=1,offY=1,color=BD3400);}
+A.top_link:link{text-decoration:none;font-size:14px;color:#FFDED2;height:0;filter:dropshadow(offX=1,offY=1,color=BD3400);}
+A.top_link:visited{text-decoration:none;font-size:14px;color:#FFDED2;height:0;filter:dropshadow(offX=1,offY=1,color=BD3400);}
+A.top_link:active{text-decoration:underline;font-size:14px;color:#fff;height:0;filter:dropshadow(offX=1,offY=1,color=BD3400);}
+A.top_link:hover{text-decoration:underline;font-size:14px;color:#fff;height:0;filter:dropshadow(offX=1,offY=1,color=BD3400);}
+
+.subbg{ width:100%; height:26px; background:url(Images/sub_bg.jpg); background-repeat:repeat-x;}
+.topbar {color:#ffffff}
+.topbar a:link,.topbar a:visited{color:#ffffff;}
+.topbar a:hover{background:#ccffcc; display:block; height:26px; padding-top:6px; color:#000000; text-decoration:none}
+#table2 {
+	width:100%;
+	height:30px;
+	border-bottom : 1px solid #fff;
+	background-color: #6E4000;
+}
+.topBorder {background:url(Images/admin_topbg1.jpg);background-repeat:repeat-x; }
+.titledaohang {
+	FONT-SIZE: 12px; 
+	FILTER: Glow(Color=#EDD2C6, Strength=1) dropshadow(Color=#EDD2C6, OffX=1, OffY=1,); 
+	COLOR: #551C02; 
+	font-weight:bolder;
+	FONT-FAMILY: '微软雅黑,宋体'
+}
+/*input{
+height:15px;padding-top:2px;border:1px solid #7F9DB9;color:#1E5494;
+}*/
+
+
+.Leftback {
+	background:#865802;
+}
+
+.calendar {
+  position: relative;
+  display: none;
+  border:2px solid #C9D7F1;
+ /* border-top: 2px solid #fff;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #fff;
+  */
+  font-size: 11px;
+  color: #666;
+  cursor: default;
+ /* background: #c8d0d4;*/
+ background:white;
+/*  font-family:tahoma,verdana,sans-serif;*/
+  font-family:arial;
+  margin-top:2px;
+}
+
+.calendar table {
+/*注捅border
+  border-top: 1px solid #000;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #000;
+  */
+  font-size: 12px;
+  color: #666;
+  cursor: default;
+ /* background: #c8d0d4;*/
+ background:white;
+  font-family: tahoma,verdana,sans-serif;
+}
+
+/* Header part -- contains navigation buttons and day names. */
+
+.calendar .button { /* "<<", "<", ">", ">>" buttons have this class */
+  text-align: center;
+  padding: 1px;
+ /*
+  border-top: 1px solid #fff;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #fff;
+  */
+}
+
+.calendar thead .title { /* This holds the current "month, year" */
+  padding: 1px;
+ /* border: 1px solid #000;*/
+ /* background: #788084;*/
+  background:;
+  /*color: #fff; */
+  color: #000;
+  text-align: center;
+}
+
+.calendar thead .headrow { /* Row <TR> containing navigation buttons */
+}
+
+.calendar thead .daynames { /* Row <TR> containing the day names */
+}
+
+.calendar thead .name { /* Cells <TD> containing the day names */
+ /* border-bottom: 1px solid #000;*/
+  padding: 2px;
+  text-align: center;
+  background: #E5ECF9;
+  /*background:white;*/
+}
+
+.calendar thead .weekend { /* How a weekend day name shows in header */
+  color: #f00;
+  color:#666;
+ 
+}
+
+.calendar thead .hilite { /* How do the buttons in header appear when hover */
+/*
+  border-top: 2px solid #fff;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #fff;
+  */
+  border-top: 1px solid #fff;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #fff; 
+  padding: 0px;
+  background: #d8e0e4;
+}
+
+.calendar thead .active { /* Active (pressed) buttons in header */
+ /* padding: 2px 0px 0px 2px;*/
+  border-top: 1px solid #000;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #000;
+  background: #b8c0c4;
+}
+
+/* The body part -- contains all the days in month. */
+
+.calendar tbody .day { /* Cells <TD> containing month days dates */
+  width: 2em;
+  text-align: center;
+  padding: 2px 4px 2px 2px;
+
+}
+
+.calendar table .wn {
+  padding: 2px 3px 2px 2px;
+  border-right: 1px solid #000;
+  background: #e8f4f0;
+}
+
+.calendar tbody .rowhilite td {
+  background: #d8e4e0;
+}
+
+.calendar tbody .rowhilite td.wn {
+  background: #c8d4d0;
+}
+
+.calendar tbody td.hilite { /* Hovered cells <TD> */
+  padding: 1px 3px 1px 1px;
+  border: 1px solid;
+  border-color: #fff #000 #000 #fff;
+}
+
+.calendar tbody td.active { /* Active (pressed) cells <TD> */
+  padding: 1px 1px 0px 1px;
+  border: 1px solid;
+  border-color: #000 #fff #fff #000;
+}
+
+.calendar tbody td.selected { /* Cell showing selected date */
+  font-weight: bold;
+  padding: 2px 2px 0px 2px;
+ /* border: 1px solid;*/
+  border-color: #000 #fff #fff #000;
+  background: #008000;
+  color:#fff;
+}
+
+.calendar tbody td.weekend { /* Cells showing weekend days */
+  /*color: #f00;*/
+  /*color:#666;*/
+}
+
+.calendar tbody td.today { /* Cell showing today date */
+  font-weight: bold;
+   /* color: #00f;*/
+  color:#000;
+  color:#000000;
+}
+
+.calendar tbody .disabled { color: #999; }
+
+.calendar tbody .emptycell { /* Empty cells (the best is to hide them) */
+  visibility: hidden;
+}
+
+.calendar tbody .emptyrow { /* Empty row (some months need less than 6 rows) */
+  display: none;
+}
+
+/* The footer part -- status bar and "Close" button */
+
+.calendar tfoot .footrow { /* The <TR> in footer (only one right now) */
+}
+
+.calendar tfoot .ttip { /* Tooltip (status bar) cell <TD> */
+ /* background: #e8f0f4;*/
+  background:#fff;  
+  padding: 1px;
+ /* border: 1px solid #000;*/
+  background: #788084;
+  background:#fff; 
+  /*color: #fff;*/color:#000;
+  text-align: center;
+}
+
+.calendar tfoot .hilite { /* Hover style for buttons in footer */
+  border-top: 1px solid #fff;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #fff;
+  padding: 1px;
+  background: #d8e0e4;
+}
+
+.calendar tfoot .active { /* Active (pressed) style for buttons in footer */
+  padding: 2px 0px 0px 2px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #000;
+}
+
+/* Combo boxes (menus that display months/years for direct selection) */
+
+.combo {
+  position: absolute;
+  display: none;
+  width: 4em;
+  top: 0px;
+  left: 0px;
+  cursor: default;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #fff;
+  background: #d8e0e4;
+  font-size: smaller;
+  padding: 1px;
+}
+
+.combo .label {
+  text-align: center;
+  padding: 1px;
+}
+
+.combo .active {
+ /* background: #c8d0d4;*/
+ background:white;
+  padding: 0px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #000;
+}
+
+.combo .hilite {
+  background: #048;
+  color: #aef;
+}
+
+
+
+
+
+.leftframetable{
+	border: 1px solid #4C3500;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	background:#FDF6E6;
+}
+a{text-decoration: none;} /* 链接无下划线,有为underline */ 
+a:link {color: #1E5494;} /* 未访问的链接 */
+a:visited {color: #1E5494;} /* 已访问的链接 */
+a:hover{color: #1E5494;} /* 鼠标在链接上 */ 
+a:active {color: #1E5494;} /* 点击激活链接 */

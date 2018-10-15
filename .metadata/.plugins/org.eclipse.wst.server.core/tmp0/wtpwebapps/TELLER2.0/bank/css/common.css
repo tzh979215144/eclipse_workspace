@@ -1,0 +1,40 @@
+@charset "utf-8";
+.nav-tabs{
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+.INFO_LABLE{
+	float:left;
+	margin-left:5px;
+	overflow: hidden;
+	width:80px;	
+}
+.CARD{
+	padding:10px   15px;
+	margin:0px;
+	overflow: hidden;
+	border-bottom:1px solid rgb(235,235,2235);
+	
+}
+.CARD:hover{
+	background-color:rgb(220,220,220);
+}
+.SECTION_AREA{
+	margin:8px 0px;
+	background:#FFF;
+	overflow: hidden;
+}
+.FORM_DEFAULT
+{
+	margin:0px 15px;
+}
+.FORM_DIV{
+	margin:10px 10px;
+}
+.FORM_LABEL{
+	margin:3px 10px;
+}
+body{
+	background:rgb(235,235,235);
+}

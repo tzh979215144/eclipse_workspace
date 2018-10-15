@@ -1,0 +1,43 @@
+package com.tanpang.day01;
+
+import java.util.Stack;
+
+/**
+ * 第一页
+ * 设计一个有getMin功能的栈
+ * @author tanpang
+ *
+ */
+public class Stack01 {
+
+		private Stack<Integer> stackData;
+		private Stack<Integer> stackMin ;
+		
+		public Stack01() {
+			this.stackData=new Stack<Integer>();
+			this.stackMin=new Stack<Integer>();
+		}
+		
+		public void push(Integer newNum) {
+			if(this.stackMin.isEmpty()) {
+					stackMin.push(newNum);
+			}else if(newNum<=this.getMin()) {
+				stackMin.push(newNum);
+			}
+			this.stackData.push(newNum);
+		}
+
+		private Integer getMin() {
+			if(this.stackMin.isEmpty()) {
+				throw new RuntimeException("your stack is empty");
+			}
+			return stackMin.peek();
+		}
+		
+		
+		
+		
+		
+		
+		
+}

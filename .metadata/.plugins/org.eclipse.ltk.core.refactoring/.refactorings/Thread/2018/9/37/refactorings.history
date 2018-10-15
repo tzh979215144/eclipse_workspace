@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 6 packages to &apos;thread/src&apos;&#x0A;- Original project: &apos;Thread&apos;&#x0A;- Destination element: &apos;thread/src&apos;&#x0A;- Original elements:&#x0A;     Thread/src/com.bjsxt.thread.syn&#x0A;     Thread/src/com.bjsxt.thread.create&#x0A;     Thread/src/com.bjsxt.thread.pro&#x0A;     Thread/src/com.bjsxt.thread.info&#x0A;     Thread/src/com.bjsxt.thread.status&#x0A;     Thread/src/com.bjsxt.thread.schedule" description="Copy packages" destination="=thread/src" element1="/src&lt;com.bjsxt.thread.syn" element2="/src&lt;com.bjsxt.thread.create" element3="/src&lt;com.bjsxt.thread.pro" element4="/src&lt;com.bjsxt.thread.info" element5="/src&lt;com.bjsxt.thread.status" element6="/src&lt;com.bjsxt.thread.schedule" flags="589830" fragments="6" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1536888270339" version="1.0"/>
+</session>

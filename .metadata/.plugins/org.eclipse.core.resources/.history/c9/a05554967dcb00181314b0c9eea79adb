@@ -1,0 +1,14 @@
+package com.tanpang.day01;
+
+public class test {
+
+	public static void main(String[] args) {
+		Stack01 s1=new Stack01();
+		s1.push(5);
+		s1.push(2);
+		s1.push(9);
+		s1.push(4);
+	}
+	
+	
+}

@@ -1,0 +1,12 @@
+package com.bjsxt.tzh;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+/**
+ * Servlet implementation class servletLife
+ */
+@WebServlet(asyncSupported = true, urlPatterns = { "/servletLife" })
+public class servletLife extends HttpServlet {
+
+}

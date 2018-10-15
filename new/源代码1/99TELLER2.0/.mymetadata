@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="99TELLER2.0"
+  id="myeclipse.1320646766545"
+  context-root="/TELLER2.0"
+  j2ee-spec="5.0"
+  archive="99TELLER2.0.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

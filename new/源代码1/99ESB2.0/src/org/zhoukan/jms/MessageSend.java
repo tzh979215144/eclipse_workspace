@@ -1,0 +1,59 @@
+package org.zhoukan.jms;
+
+import javax.jms.Connection;
+import javax.jms.ConnectionFactory;
+import javax.jms.DeliveryMode;
+import javax.jms.Destination;
+import javax.jms.JMSException;
+import javax.jms.MessageProducer;
+import javax.jms.Session;
+import javax.jms.TextMessage;
+
+import org.apache.activemq.ActiveMQConnection;
+import org.apache.activemq.ActiveMQConnectionFactory;
+
+public class MessageSend extends Thread{
+	private String request = null;
+	private String destination = null;
+	private String ID = null;
+	private String IP = "127.0.0.1";
+	
+	public MessageSend(String xml, String des, String ID) {
+		this.request = xml;
+		this.destination = des;
+		this.ID = ID;
+	}
+	
+	public void send2Message(){
+		try {
+			ConnectionFactory factory = 
+				new ActiveMQConnectionFactory(ActiveMQConnection.DEFAULT_USER,
+						ActiveMQConnection.DEFAULT_PASSWORD, "tcp://"+ this.IP +":61616");
+			Connection connection = factory.createConnection();
+			connection.start();
+			
+			Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+			Destination destination = session.createQueue(this.destination);
+			
+			TextMessage message = session.createTextMessage(this.request);
+			message.setStringProperty("MessageID", this.ID);
+			System.out.println("INFO | ESB发送之前贴ID的消息:"+message.getStringProperty("MessageID"));
+			MessageProducer producer = session.createProducer(destination); 
+			producer.send(message, DeliveryMode.NON_PERSISTENT, 8, 5000);
+			session.close();
+			connection.close();
+		} catch (JMSException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+	this.send2Message();
+	}
+	
+	
+}

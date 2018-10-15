@@ -1,0 +1,20 @@
+package com.bjsxt.tzh;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServlet;
+
+/**
+ * Servlet implementation class MyServlet1
+ */
+public class MyServlet1 extends HttpServlet {
+	
+	@Override
+	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+			res.getWriter().wait("this is my first page!");
+	}
+
+}

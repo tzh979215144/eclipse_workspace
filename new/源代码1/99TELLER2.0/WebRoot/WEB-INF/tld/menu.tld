@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+    
+  <description>JSTL 1.1 core library</description>
+  <display-name>JSTL core</display-name>
+  <tlib-version>1.1</tlib-version>
+  <short-name>menu</short-name>
+  <uri>http://org.zhoukan.tag</uri>
+  
+  <tag>
+  	<description>chlid_menu_list</description>
+  	<name>chlidMenu</name>
+  	<tag-class>org.zhoukan.tag.ChlidMenu</tag-class>
+  	<body-content>JSP</body-content>
+  	
+  	<variable>
+  		<name-given>MenuBean</name-given>
+  		<variable-class>org.zhoukan.bean.MenuBean</variable-class>
+  		<declare>true</declare>
+  		<scope>AT_BEGIN</scope>
+  	</variable>
+  	<variable>
+  		<name-given>userName</name-given>
+  		<variable-class>java.lang.String</variable-class>
+  		<declare>true</declare>
+  		<scope>AT_BEGIN</scope>
+  	</variable>
+  	<attribute>
+  		<name>mainMenu</name>
+  		<required>false</required>
+  		<rtexprvalue>true</rtexprvalue>
+  	</attribute>
+  	
+  	<attribute>
+  		<name>userName</name>
+  		<required>false</required>
+  		<rtexprvalue>true</rtexprvalue>
+  	</attribute>
+  </tag>
+  
+  <tag>
+  	<description>menu_list</description>
+  	<name>menu</name>
+  	<tag-class>org.zhoukan.tag.MenuTag</tag-class>
+  	<body-content>JSP</body-content>
+  	
+  	<variable>
+  		<name-given>LoginBean</name-given>
+  		<variable-class>org.zhoukan.bean.LoginBean</variable-class>
+  		<declare>true</declare>
+  		<scope>AT_BEGIN</scope>
+  	</variable>
+  	
+  	<attribute>
+  		<name>loginBean</name>
+  		<required>false</required>
+  		<rtexprvalue>true</rtexprvalue>
+  	</attribute>
+  </tag>
+  
+</taglib>

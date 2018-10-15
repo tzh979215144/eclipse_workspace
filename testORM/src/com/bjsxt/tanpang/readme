@@ -1,0 +1,13 @@
+		ORM(Object Relationship Mapping)的基本思想
+			－表结构跟类对应，表中字段和类的属性对应，表中记录和对象对应
+			－让javabean的属性名和类型尽量与数据库保持一致！
+			－一条记录对应一个对象，将这些查询到的对象放到容器中（List,Set,Map)
+			
+		将表中的一条记录封装到Object数组中
+		将表中的一条记录封装到Map中
+		将表中一条记录封装到javabean对象中
+		
+	这里在数据库中新建数据库－－》srom:
+	在此数据库中新建雇员表emp(id,empname,salary,birthday,age,deptId)
+	和部门表dept(id,dname,address)
+		
