@@ -1,0 +1,33 @@
+package com.tanpang.day10_31;
+
+public class 数值的整数次方 {
+	public double Power(double base, int exponent) {
+//        return Math.pow(base, exponent);//这个就是开挂
+      //由于exponent是int类型的整数，则可能包含正整数、0以及负整数三种情况。
+        double temp=1;
+        if(exponent>0){
+            for(int i=1;i<=exponent;i++){
+                temp=temp*base;
+                if(temp>1.7976931348623157E308){
+                    System.out.println("已经超出double类型的取值范围。");
+                    return -1;
+                }
+            }
+            return temp;
+             
+        }if(exponent<0){
+            exponent=-exponent;
+            for(int i=1;i<=exponent;i++){
+                temp=temp*base;
+                if(temp>1.7976931348623157E308){
+                    System.out.println("已经超出double类型的取值范围。");
+                    return -1;
+                }
+            }
+            temp=1.0/temp;
+            return temp;
+        }else{
+            return 1;
+        }
+	}     
+}
